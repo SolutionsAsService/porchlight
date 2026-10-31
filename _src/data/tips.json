@@ -1,0 +1,83 @@
+{
+ "sources": {
+  "fda": [
+   "U.S. Food and Drug Administration: Halloween Food Safety Tips for Parents",
+   "https://www.fda.gov/food/buy-store-serve-safe-food/halloween-food-safety-tips-parents"
+  ],
+  "aap": [
+   "American Academy of Pediatrics (HealthyChildren.org): Halloween Safety Tips",
+   "https://www.healthychildren.org/English/safety-prevention/all-around/Pages/Halloween-Safety-Tips.aspx"
+  ],
+  "fare": [
+   "FARE: The Teal Pumpkin Project",
+   "https://www.foodallergy.org/our-initiatives/awareness-campaigns/living-teal/teal-pumpkin-project"
+  ]
+ },
+ "tips": [
+  {
+   "head": "Eat first, check later",
+   "body": "Give children a meal or snack before they go, and have them wait to eat any treats until you have looked them over at home.",
+   "src": [
+    "fda",
+    "aap"
+   ]
+  },
+  {
+   "head": "Wrapped treats only",
+   "body": "Keep only commercially wrapped treats. Throw away anything unwrapped, torn, discoloured or with tiny pinholes.",
+   "src": [
+    "fda"
+   ]
+  },
+  {
+   "head": "Be seen",
+   "body": "Choose bright costumes, add reflective tape or glow-in-the-dark details, and carry a flashlight after dark.",
+   "src": [
+    "aap"
+   ]
+  },
+  {
+   "head": "Costumes that let them see and walk",
+   "body": "Prefer non-toxic face paint and hats to masks that block vision; keep costumes short enough not to trip on, and look for \"flame resistant\" on the label.",
+   "src": [
+    "aap"
+   ]
+  },
+  {
+   "head": "Who goes with whom",
+   "body": "Always go with young children. Older children should go in a group, with a time to be back. No one goes into a home or a car for a treat.",
+   "src": [
+    "aap"
+   ]
+  },
+  {
+   "head": "Crossing the street",
+   "body": "Stay on lit streets and sidewalks, cross together at crosswalks, and put phones and music away while walking and crossing.",
+   "src": [
+    "aap"
+   ]
+  },
+  {
+   "head": "Food allergies",
+   "body": "Read labels; an allergic child should not eat home-baked treats, and should carry their prescribed emergency medicine.",
+   "src": [
+    "fda",
+    "aap"
+   ]
+  },
+  {
+   "head": "Teal pumpkins",
+   "body": "A teal pumpkin on a porch means that house has non-food treats, so children with food allergies can join in.",
+   "src": [
+    "fare"
+   ]
+  },
+  {
+   "head": "The littlest ones",
+   "body": "For young children, take out choking hazards: gum, peanuts, hard sweets and small toys.",
+   "src": [
+    "fda"
+   ]
+  }
+ ]
+}

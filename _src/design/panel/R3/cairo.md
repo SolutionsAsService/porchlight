@@ -1,0 +1,6 @@
+Anchor: Cairo, How Charts Lie, "Charts can lie through their numbers": a printed figure must reproduce.
+Observed: engine tests 8/8 pass; build ok. Recomputed and reproduced: moon 60% lit, waning gibbous (setHours(21,0,0,0) = 9 pm local, correct); 75x2=150 pieces, 4 bags of 40, 10 spare; pacing 90 left/90 min/40 per hour = 60 kids, 1 each; 47 pieces, 3 kids = 16,16,15; 9 tips (tips.json has 9); 8 tests; six cities and five moon dates (reference file 6 and 5); 500 random hauls (loop is 500). NOT reproduced: candy.html (and its source _src\pages\candy.html) say pacing is checked by "one that tries every bowl size from 0 to 120". The test loops `left += 7` (18 of 121 sizes), minutes by 30 and only 3 rates. No bowl size is skipped by design of the claim, but most are skipped by the test.
+Verdict: OBJECT
+Requested change: in _src\pages\candy.html reword to match the test (e.g. "tries bowl sizes from 0 to 120 in steps of 7 across several rates and times"), or change the test loop to `left++`; then rebuild.
+Statement of meaning: every number shown reproduces except the claim that every bowl size was tried.
+Critic question: would a reader who trusts "every" be misled if a bowl of 8 were the failing case?

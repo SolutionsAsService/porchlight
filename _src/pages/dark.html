@@ -1,0 +1,30 @@
+{"title": "Dark o'clock: when it gets dark tonight", "h1": "Dark o'clock",
+ "line": "Sunset, dusk and full dark for tonight, worked out on your device. Your location is used once and never sent or stored.",
+ "description": "When does it get dark tonight? Sunset, civil dusk and nautical dusk for your location or a city, computed in your browser, plus tonight's moon.",
+ "scripts": ["ui-dark.js"]}
+---
+<div class="wrap">
+<section class="tool" aria-labelledby="t-h">
+<h2 id="t-h">Tonight</h2>
+<div class="row">
+<label>City <select id="place"></select></label>
+<label>Date <input id="date" type="date"></label>
+<button type="button" id="locate" class="ghost">Use my location</button>
+</div>
+<p class="note" id="where" aria-live="polite">Showing New York.</p>
+<ul class="times" aria-live="polite">
+<li><span class="note">Sunset</span><span class="big" id="t-sunset">–</span></li>
+<li><span class="note">Dusk: lights on, reflectors matter</span><span class="big" id="t-civil">–</span></li>
+<li><span class="note">Dark: stars out, flashlights</span><span class="big" id="t-nautical">–</span></li>
+</ul>
+<div class="dusk-bar" aria-hidden="true"></div>
+<p class="answer" id="moon-line">Moon tonight: <b>{{fig moon.lit}}% lit</b>, {{fig moon.name}}.</p>
+</section>
+<div class="prose">
+<h2>What the three times mean</h2>
+<p><b>Sunset</b> is when the top of the sun drops below a flat horizon. <b>Dusk</b> (civil dusk) is when the sun is 6° below the horizon: the sky still glows, but cars need headlights and costumes need reflectors. <b>Dark</b> (nautical dusk) is 12° below: the horizon is gone and a flashlight is a must.</p>
+<h2>How it's worked out</h2>
+<p>With the sun-position equations NOAA publishes, computed in your browser. Tested against an independent library (astral): within a minute at six test cities on 31 October 2026. The moon is tested against a JPL ephemeris at five dates, within one percentage point, and is shown here for full dark that evening (the front page uses 9 pm). {{tests}} tests run with every build. Hills, buildings and weather can make it darker sooner.</p>
+<p>"Use my location" asks your browser for your position, uses it once to do this sum on your device, and does not send it anywhere or keep it.</p>
+</div>
+</div>

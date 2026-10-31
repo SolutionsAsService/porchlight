@@ -1,0 +1,22 @@
+{"title": "Pumpkin stencil maker", "h1": "Stencil",
+ "line": "Turn a name or a word into a printable carving stencil, sized to your pumpkin. The letters are already bridged, so the middles of O and A stay on.",
+ "description": "Free printable pumpkin carving stencil from any name or word, sized to your pumpkin, in a stencil typeface so letter middles don't fall out.",
+ "scripts": ["ui-stencil.js"]}
+---
+<div class="wrap">
+<section class="tool" aria-labelledby="st-h">
+<h2 id="st-h">Your word</h2>
+<div class="row">
+<label>Name or word <input id="st-text" type="text" value="BOO" maxlength="30" autocomplete="off"></label>
+<label>Face of the pumpkin, cm across <select id="st-size"><option>12</option><option>15</option><option selected>18</option><option>22</option><option>26</option></select></label>
+<button type="button" id="st-print">Print</button>
+<button type="button" class="ghost" id="st-save">Save as SVG</button>
+</div>
+<div class="stencil-out" id="st-out" aria-live="polite"></div>
+</section>
+<div class="prose">
+<h2>How to use it</h2>
+<p>Print at 100% (not "fit to page"), tape it to the pumpkin, prick along the letters with a pin or skewer, peel it off, and cut out what's inside the dots. The dashed oval is the face at the size you chose. Adults do the cutting.</p>
+<p>The mouth of the jack-o'-lantern on the <a href="index.html">front page</a> is the word BOO in this tool's stencil type.</p>
+</div>
+</div>

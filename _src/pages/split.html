@@ -1,0 +1,21 @@
+{"title": "Haul splitter: share the candy fairly", "h1": "Haul splitter",
+ "line": "Split a pile of Halloween candy between kids, fair to the piece, and keep what someone can't eat away from them.",
+ "description": "Split trick-or-treat candy fairly between siblings: totals within one piece, and nothing goes to a kid who can't eat it.",
+ "scripts": ["ui-split.js"]}
+---
+<div class="wrap">
+<section class="tool" aria-labelledby="s-h">
+<h2 id="s-h" tabindex="-1">The pile</h2>
+<div class="kids" id="types"></div>
+<p class="row"><button type="button" class="ghost" id="add-type">Add a kind of candy</button></p>
+<h2>The kids</h2>
+<div class="kids" id="kids"></div>
+<p class="row"><button type="button" class="ghost" id="add-kid">Add a kid</button></p>
+<div class="tablewrap" tabindex="0" role="region" aria-label="Each kid's share" id="out" aria-live="polite"></div>
+</section>
+<div class="prose">
+<h2>How it's fair</h2>
+<p>Biggest piles are dealt first. Each piece goes to whoever has the fewest so far among the kids who can eat it, and ties take turns, so nobody is always first. When nobody has to skip anything, the totals always end within one piece of each other: a test checks that on 500 random hauls.</p>
+<p>Tick everything a kid can't eat; they get none of it. The others share it, so their totals can be a little higher. That's the fair trade.</p>
+</div>
+</div>

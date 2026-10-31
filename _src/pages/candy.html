@@ -1,0 +1,31 @@
+{"title": "Candy math: how much to buy, how fast to give", "h1": "Candy math",
+ "line": "How many bags to buy, and how many pieces to hand each kid right now so the bowl lasts.",
+ "description": "Halloween candy calculator: how many bags to buy for the trick-or-treaters you expect, and how many pieces per kid to give now so the bowl lasts until you turn the porch light off.",
+ "scripts": ["ui-candy.js"]}
+---
+<div class="wrap">
+<section class="tool" aria-labelledby="b-h">
+<h2 id="b-h">Before: how much to buy</h2>
+<div class="row">
+<label>Trick-or-treaters you expect <input id="b-v" type="number" min="0" value="{{fig buy.input.visitors}}" inputmode="numeric"></label>
+<label>Pieces each <input id="b-k" type="number" min="1" value="{{fig buy.input.perKid}}" inputmode="numeric"></label>
+<label>Pieces in one bag <input id="b-b" type="number" min="1" value="{{fig buy.input.perBag}}" inputmode="numeric"></label>
+</div>
+<p class="answer" id="b-out" aria-live="polite">Buy <b>{{fig buy.bags}} bags</b>: {{fig buy.pieces}} pieces, {{fig buy.spare}} to spare.</p>
+<p class="note">Don't know how many to expect? Count last year's empty wrappers, or ask a neighbour who handed out.</p>
+</section>
+<section class="tool" aria-labelledby="p-h">
+<h2 id="p-h">Tonight: how many each, right now</h2>
+<div class="row">
+<label>Pieces left in the bowl <input id="p-l" type="number" min="0" value="{{fig pace.input.piecesLeft}}" inputmode="numeric"></label>
+<label>Porch light on at <input id="p-start" type="time" value="17:30"></label>
+<label>Off at <input id="p-end" type="time" value="20:30"></label>
+<label>Kids an hour, about <input id="p-r" type="number" min="0" value="{{fig pace.input.visitorsPerHour}}" inputmode="numeric"></label>
+</div>
+<p class="answer" id="p-out" aria-live="polite">Give <b>{{fig pace.perKid}} each</b>: about {{fig pace.expected}} more kids in the next {{fig pace.input.minutesLeft}} minutes.</p>
+</section>
+<div class="prose">
+<h2>How it's worked out</h2>
+<p>Buying: kids × pieces each, rounded up to whole bags. Pacing: the kids you expect from now until the light goes off is the rate × the time left; each gets the pieces left divided by that, rounded down, so the bowl can't run out early. It assumes kids arrive at a steady rate, which real nights rarely do (most come early), so treat it as a guide and recheck the bowl. If even one each won't last, it tells you when you'll run out. Both are checked by tests, including one that tries every bowl size from 0 to 120, every 5 minutes up to three hours and rates from 0 to 120 kids an hour, and never promises more than the bowl holds.</p>
+</div>
+</div>

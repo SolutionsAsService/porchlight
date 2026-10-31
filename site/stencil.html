@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pumpkin stencil maker · Porchlight</title>
+<meta name="description" content="Free printable pumpkin carving stencil from any name or word, sized to your pumpkin, in a stencil typeface so letter middles don&#x27;t fall out.">
+<link rel="canonical" href="https://porchlight.shadw.app/stencil">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Pumpkin stencil maker · Porchlight">
+<meta property="og:description" content="Free printable pumpkin carving stencil from any name or word, sized to your pumpkin, in a stencil typeface so letter middles don&#x27;t fall out.">
+<meta property="og:url" content="https://porchlight.shadw.app/stencil">
+<meta property="og:image" content="https://porchlight.shadw.app/og.svg">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'">
+<meta name="theme-color" content="#0b0d14">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="p-stencil">
+<a class="skip" href="#main">Skip to content</a>
+<header class="mast"><a class="brand" href="index.html"><svg viewBox="0 0 40 40" aria-hidden="true" focusable="false"><path class="b-lamp" d="M12 6h16l4 12H8Z"/><path class="b-light" d="M10 18h20l-4 14H14Z"/></svg>Porchlight</a>
+<nav aria-label="Tools"><ul><li><a href="dark.html">Dark o&#x27;clock</a></li><li><a href="candy.html">Candy math</a></li><li><a href="split.html">Haul splitter</a></li><li><a href="stencil.html" aria-current=page>Stencil</a></li><li><a href="safety.html">Safety</a></li><li><a href="about.html">About</a></li></ul></nav></header>
+<main id="main">
+<div class="night-field"><header class="band"><div class="band-ic" aria-hidden="true"><svg class="pumpkin pumpkin-sm" viewBox="40 40 520 470" aria-hidden="true" focusable="false">
+<!-- A jack-o'-lantern. Its left eye is tonight's moon (60% lit), its right eye a wrapped sweet, its nose a warning triangle, its ribs equal shares, and its mouth is the word BOO in the stencil maker's type. -->
+<defs><radialGradient id="glow" cx="50%" cy="55%" r="60%"><stop offset="0" stop-color="#fff2b8"/><stop offset=".45" stop-color="#ffc24a"/><stop offset="1" stop-color="#ff7a1a"/></radialGradient>
+<filter id="halo" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="10"/></filter></defs>
+<path class="stem" d="M286 112c2-30-6-52-26-70l18-10c26 20 34 48 32 80Z"/>
+<path class="rib r5" d="M300 108c-120 0-232 70-232 196s104 196 232 196 232-70 232-196-112-196-232-196Z"/><path class="rib r4" d="M300 110c-86 0-168 72-168 194s82 194 168 194 168-72 168-194-82-194-168-194Z"/><path class="rib r3" d="M300 112c-46 0-96 74-96 192s50 192 96 192 96-74 96-192-50-192-96-192Z"/>
+
+<g class="carve">
+<g class="rim" aria-hidden="true"><circle cx="208" cy="236" r="50"/><path d="M358 236 a34 27.200000000000003 0 1 0 68 0 a34 27.200000000000003 0 1 0 -68 0Z M358 236 l-30.6 -21.08 l4.08 21.08 l-4.08 21.08Z M426 236 l30.6 -21.08 l-4.08 21.08 l4.08 21.08Z"/><path d="M300 270 330 322H270Z"/><text x="300" y="420" text-anchor="middle" class="mouth">BOO</text></g>
+<g class="halo" filter="url(#halo)" aria-hidden="true"><text x="300" y="420" text-anchor="middle" class="mouth">BOO</text></g>
+<circle class="unlit" cx="208" cy="236" r="50"/><path class="unlit" d="M208 186 A50 50 0 0 0 208 286 A10.41 50 0 0 0 208 186Z"/>
+<path class="unlit" d="M358 236 a34 27.200000000000003 0 1 0 68 0 a34 27.200000000000003 0 1 0 -68 0Z M358 236 l-30.6 -21.08 l4.08 21.08 l-4.08 21.08Z M426 236 l30.6 -21.08 l-4.08 21.08 l4.08 21.08Z"/>
+<path class="unlit" d="M300 270 330 322H270Z"/>
+<text x="300" y="420" text-anchor="middle" class="hole mouth">BOO</text>
+</g></svg></div><div><h1 id="top">Stencil</h1><p class="band-line">Turn a name or a word into a printable carving stencil, sized to your pumpkin. The letters are already bridged, so the middles of O and A stay on.</p></div></header></div>
+<div class="wrap">
+<section class="tool" aria-labelledby="st-h">
+<h2 id="st-h">Your word</h2>
+<div class="row">
+<label>Name or word <input id="st-text" type="text" value="BOO" maxlength="30" autocomplete="off"></label>
+<label>Face of the pumpkin, cm across <select id="st-size"><option>12</option><option>15</option><option selected>18</option><option>22</option><option>26</option></select></label>
+<button type="button" id="st-print">Print</button>
+<button type="button" class="ghost" id="st-save">Save as SVG</button>
+</div>
+<div class="stencil-out" id="st-out" aria-live="polite"></div>
+</section>
+<div class="prose">
+<h2>How to use it</h2>
+<p>Print at 100% (not "fit to page"), tape it to the pumpkin, prick along the letters with a pin or skewer, peel it off, and cut out what's inside the dots. The dashed oval is the face at the size you chose. Adults do the cutting.</p>
+<p>The mouth of the jack-o'-lantern on the <a href="index.html">front page</a> is the word BOO in this tool's stencil type.</p>
+</div>
+</div>
+
+</main>
+<nav class="pager" aria-label="Next tool"><a href="safety.html"><span>Next</span>Safety →</a></nav>
+<footer class="foot"><p>Porchlight runs on your device. No accounts, no cookies, no tracking, no maps; nothing you type or share leaves your device, and nothing is loaded from anywhere else. <a href="about.html">How</a>.</p>
+<p>By SolutionsAsService. Safety tips link to their sources.</p></footer>
+<script type="module" src="js/ui-stencil.js"></script>
+</body>
+</html>

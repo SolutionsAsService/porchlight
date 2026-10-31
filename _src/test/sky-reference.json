@@ -1,0 +1,80 @@
+{
+ "sun": [
+  {
+   "name": "New York",
+   "lat": 40.7128,
+   "lon": -74.006,
+   "tz": "America/New_York",
+   "sunset": "17:53:09",
+   "civil": "18:22:03",
+   "nautical": "18:54:10"
+  },
+  {
+   "name": "Phoenix",
+   "lat": 33.4484,
+   "lon": -112.074,
+   "tz": "America/Phoenix",
+   "sunset": "17:36:49",
+   "civil": "18:02:56",
+   "nautical": "18:32:07"
+  },
+  {
+   "name": "Anchorage",
+   "lat": 61.2181,
+   "lon": -149.9003,
+   "tz": "America/Anchorage",
+   "sunset": "17:59:22",
+   "civil": "18:47:19",
+   "nautical": "19:38:21"
+  },
+  {
+   "name": "Honolulu",
+   "lat": 21.3069,
+   "lon": -157.8583,
+   "tz": "Pacific/Honolulu",
+   "sunset": "17:55:28",
+   "civil": "18:18:46",
+   "nautical": "18:44:59"
+  },
+  {
+   "name": "London",
+   "lat": 51.5074,
+   "lon": -0.1278,
+   "tz": "Europe/London",
+   "sunset": "16:35:00",
+   "civil": "17:10:43",
+   "nautical": "17:49:53"
+  },
+  {
+   "name": "Sydney",
+   "lat": -33.8688,
+   "lon": 151.2093,
+   "tz": "Australia/Sydney",
+   "sunset": "19:21:41",
+   "civil": "19:48:38",
+   "nautical": "20:20:08"
+  }
+ ],
+ "moon": [
+  {
+   "utc": "2026-10-31T23:00:00Z",
+   "lit": 60.22
+  },
+  {
+   "utc": "2026-10-26T12:00:00Z",
+   "lit": 99.69
+  },
+  {
+   "utc": "2026-11-09T00:00:00Z",
+   "lit": 0.27
+  },
+  {
+   "utc": "2025-10-31T23:00:00Z",
+   "lit": 73.2
+  },
+  {
+   "utc": "2027-10-31T23:00:00Z",
+   "lit": 6.71
+  }
+ ]
+}

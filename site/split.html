@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Haul splitter: share the candy fairly · Porchlight</title>
+<meta name="description" content="Split trick-or-treat candy fairly between siblings: totals within one piece, and nothing goes to a kid who can&#x27;t eat it.">
+<link rel="canonical" href="https://porchlight.shadw.app/split">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Haul splitter: share the candy fairly · Porchlight">
+<meta property="og:description" content="Split trick-or-treat candy fairly between siblings: totals within one piece, and nothing goes to a kid who can&#x27;t eat it.">
+<meta property="og:url" content="https://porchlight.shadw.app/split">
+<meta property="og:image" content="https://porchlight.shadw.app/og.svg">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'">
+<meta name="theme-color" content="#0b0d14">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="p-split">
+<a class="skip" href="#main">Skip to content</a>
+<header class="mast"><a class="brand" href="index.html"><svg viewBox="0 0 40 40" aria-hidden="true" focusable="false"><path class="b-lamp" d="M12 6h16l4 12H8Z"/><path class="b-light" d="M10 18h20l-4 14H14Z"/></svg>Porchlight</a>
+<nav aria-label="Tools"><ul><li><a href="dark.html">Dark o&#x27;clock</a></li><li><a href="candy.html">Candy math</a></li><li><a href="split.html" aria-current=page>Haul splitter</a></li><li><a href="stencil.html">Stencil</a></li><li><a href="safety.html">Safety</a></li><li><a href="about.html">About</a></li></ul></nav></header>
+<main id="main">
+<div class="night-field"><header class="band"><div class="band-ic" aria-hidden="true"><svg class="pumpkin pumpkin-sm" viewBox="40 40 520 470" aria-hidden="true" focusable="false">
+<!-- A jack-o'-lantern. Its left eye is tonight's moon (60% lit), its right eye a wrapped sweet, its nose a warning triangle, its ribs equal shares, and its mouth is the word BOO in the stencil maker's type. -->
+<defs><radialGradient id="glow" cx="50%" cy="55%" r="60%"><stop offset="0" stop-color="#fff2b8"/><stop offset=".45" stop-color="#ffc24a"/><stop offset="1" stop-color="#ff7a1a"/></radialGradient>
+<filter id="halo" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="10"/></filter></defs>
+<path class="stem" d="M286 112c2-30-6-52-26-70l18-10c26 20 34 48 32 80Z"/>
+<path class="rib r5" d="M300 108c-120 0-232 70-232 196s104 196 232 196 232-70 232-196-112-196-232-196Z"/><path class="rib r4" d="M300 110c-86 0-168 72-168 194s82 194 168 194 168-72 168-194-82-194-168-194Z"/><path class="rib r3" d="M300 112c-46 0-96 74-96 192s50 192 96 192 96-74 96-192-50-192-96-192Z"/>
+<g class=seams aria-hidden=true><path d="M300 112c-46 0-96 74-96 192s50 192 96 192"/><path d="M300 112c46 0 96 74 96 192s-50 192-96 192"/><path d="M300 110c-86 0-168 72-168 194s82 194 168 194"/><path d="M300 110c86 0 168 72 168 194s-82 194-168 194"/></g>
+<g class="carve">
+<g class="rim" aria-hidden="true"><circle cx="208" cy="236" r="50"/><path d="M358 236 a34 27.200000000000003 0 1 0 68 0 a34 27.200000000000003 0 1 0 -68 0Z M358 236 l-30.6 -21.08 l4.08 21.08 l-4.08 21.08Z M426 236 l30.6 -21.08 l-4.08 21.08 l4.08 21.08Z"/><path d="M300 270 330 322H270Z"/><text x="300" y="420" text-anchor="middle" class="mouth">BOO</text></g>
+<g class="halo" filter="url(#halo)" aria-hidden="true"></g>
+<circle class="unlit" cx="208" cy="236" r="50"/><path class="unlit" d="M208 186 A50 50 0 0 0 208 286 A10.41 50 0 0 0 208 186Z"/>
+<path class="unlit" d="M358 236 a34 27.200000000000003 0 1 0 68 0 a34 27.200000000000003 0 1 0 -68 0Z M358 236 l-30.6 -21.08 l4.08 21.08 l-4.08 21.08Z M426 236 l30.6 -21.08 l-4.08 21.08 l4.08 21.08Z"/>
+<path class="unlit" d="M300 270 330 322H270Z"/>
+<text x="300" y="420" text-anchor="middle" class="unlit mouth">BOO</text>
+</g></svg></div><div><h1 id="top">Haul splitter</h1><p class="band-line">Split a pile of Halloween candy between kids, fair to the piece, and keep what someone can&#x27;t eat away from them.</p></div></header></div>
+<div class="wrap">
+<section class="tool" aria-labelledby="s-h">
+<h2 id="s-h" tabindex="-1">The pile</h2>
+<div class="kids" id="types"></div>
+<p class="row"><button type="button" class="ghost" id="add-type">Add a kind of candy</button></p>
+<h2>The kids</h2>
+<div class="kids" id="kids"></div>
+<p class="row"><button type="button" class="ghost" id="add-kid">Add a kid</button></p>
+<div class="tablewrap" tabindex="0" role="region" aria-label="Each kid's share" id="out" aria-live="polite"></div>
+</section>
+<div class="prose">
+<h2>How it's fair</h2>
+<p>Biggest piles are dealt first. Each piece goes to whoever has the fewest so far among the kids who can eat it, and ties take turns, so nobody is always first. When nobody has to skip anything, the totals always end within one piece of each other: a test checks that on 500 random hauls.</p>
+<p>Tick everything a kid can't eat; they get none of it. The others share it, so their totals can be a little higher. That's the fair trade.</p>
+</div>
+</div>
+
+</main>
+<nav class="pager" aria-label="Next tool"><a href="stencil.html"><span>Next</span>Stencil →</a></nav>
+<footer class="foot"><p>Porchlight runs on your device. No accounts, no cookies, no tracking, no maps; nothing you type or share leaves your device, and nothing is loaded from anywhere else. <a href="about.html">How</a>.</p>
+<p>By SolutionsAsService. Safety tips link to their sources.</p></footer>
+<script type="module" src="js/ui-split.js"></script>
+</body>
+</html>

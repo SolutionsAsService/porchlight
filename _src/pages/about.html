@@ -1,0 +1,14 @@
+{"title": "About Porchlight", "h1": "About",
+ "line": "What Porchlight does, and what it deliberately doesn't.",
+ "description": "Porchlight is a Halloween night kit that runs entirely on your device: no accounts, no tracking, no maps, nothing sent."}
+---
+<div class="wrap prose">
+<h2>What it doesn't do</h2>
+<p>No maps, no lists of houses or streets, no "best spots", no check-ins and no sharing. It never asks where children are or where they're going. Information like that is useful to the wrong people too, so it isn't here at all.</p>
+<h2>What stays on your device</h2>
+<p>Everything. The tools are small scripts that run in your browser. If you tap "Use my location" on Dark o'clock, your browser asks you first; the position is used once to compute tonight's dusk and is not sent or stored. Porchlight sets no cookies and loads no analytics, and nothing is fetched from anywhere else: even the fonts are served from this site.</p>
+<h2>How the numbers are checked</h2>
+<p>Each tool's arithmetic is in its own file and is tested with every build ({{tests}} tests): sunset and dusk against the astral library, the moon against a JPL ephemeris, the candy pacing against every bowl size from 0 to 120 at every 5 minutes and rate, and the haul splitter against 500 random hauls. The code is at <a href="{{repo}}">{{repo}}</a>.</p>
+<h2>Made by</h2>
+<p>SolutionsAsService. The design decisions and reviews are in the <a href="{{repo}}/blob/main/_src/design/DESIGN-LOG.md">design log</a>.</p>
+</div>
